@@ -1,4 +1,4 @@
-# Core dependencies for py_wise
+# Core dependencies for pywise_pkg
 click>=8.0.0
 rich>=12.0.0
 packaging>=21.0

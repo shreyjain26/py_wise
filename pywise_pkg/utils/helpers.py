@@ -1,5 +1,5 @@
 """
-Utility functions and helpers for py_wise
+Utility functions and helpers for pywise_pkg
 """
 
 import os
@@ -79,7 +79,7 @@ def find_project_root() -> Optional[Path]:
             (parent / filename).exists()
             for filename in [
                 'setup.py', 'setup.cfg', 'pyproject.toml', 'requirements.txt',
-                'Pipfile', 'poetry.lock', 'environment.yml', '.git', '.py_wise.yml'
+                'Pipfile', 'poetry.lock', 'environment.yml', '.git', '.pywise_pkg.yml'
             ]
         ):
             return parent

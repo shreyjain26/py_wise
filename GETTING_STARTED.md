@@ -1,9 +1,9 @@
-# Getting Started with py_wise Advanced
+# Getting Started with pywise_pkg Advanced
 
 ## 🚀 Quick Installation
 
 ```bash
-pip install py_wise
+pip install pywise_pkg
 ```
 
 ## 🎯 Key Commands
@@ -11,58 +11,58 @@ pip install py_wise
 ### 1. Smart Dependency Detection
 ```bash
 # Show only packages YOU installed (not auto-dependencies)
-py_wise detect
+pywise_pkg detect
 
 # Generate clean requirements.txt
-py_wise detect --output requirements.txt
+pywise_pkg detect --output requirements.txt
 ```
 
 ### 2. Venv to Conda Conversion (SINGLE COMMAND!)
 ```bash
 # Convert your current venv to conda environment
-py_wise venv-to-conda --name my-project
+pywise_pkg venv-to-conda --name my-project
 
 # With specific Python version
-py_wise venv-to-conda --name my-project --python-version 3.11
+pywise_pkg venv-to-conda --name my-project --python-version 3.11
 ```
 
 ### 3. Hybrid Conda-Pip Resolution
 ```bash
 # Intelligent resolution using both conda and pip
-py_wise resolve numpy pandas tensorflow flask
+pywise_pkg resolve numpy pandas tensorflow flask
 
 # Force specific strategy
-py_wise resolve numpy pandas --strategy conda-only
+pywise_pkg resolve numpy pandas --strategy conda-only
 ```
 
 ### 4. Docker Optimization
 ```bash
 # Generate optimized Docker configuration
-py_wise dockerize
+pywise_pkg dockerize
 
 # Generate and build in one command
-py_wise dockerize --build --tag my-app:latest
+pywise_pkg dockerize --build --tag my-app:latest
 ```
 
 ### 5. Format Migration
 ```bash
 # Convert between any formats
-py_wise migrate requirements.txt --to conda
-py_wise migrate environment.yml --to poetry
+pywise_pkg migrate requirements.txt --to conda
+pywise_pkg migrate environment.yml --to poetry
 ```
 
 ### 6. Multi-Environment Setup
 ```bash
 # Setup dev/staging/prod configurations
-py_wise multi-env
+pywise_pkg multi-env
 
 # Custom environments
-py_wise multi-env -e dev -e test -e staging -e prod
+pywise_pkg multi-env -e dev -e test -e staging -e prod
 ```
 
 ## 🔧 Configuration
 
-Create `.py_wise.yml`:
+Create `.pywise_pkg.yml`:
 
 ```yaml
 detect:
@@ -82,21 +82,21 @@ docker:
 
 ### Clean Up Messy Project
 ```bash
-py_wise detect --output clean-requirements.txt
-py_wise dockerize --optimize
+pywise_pkg detect --output clean-requirements.txt
+pywise_pkg dockerize --optimize
 ```
 
 ### ML Project Setup
 ```bash
-py_wise venv-to-conda --name ml-project
-py_wise resolve tensorflow pytorch scikit-learn
+pywise_pkg venv-to-conda --name ml-project
+pywise_pkg resolve tensorflow pytorch scikit-learn
 ```
 
 ### Web App Deployment
 ```bash
-py_wise detect --output requirements.txt
-py_wise dockerize --build --tag webapp:latest
-py_wise multi-env
+pywise_pkg detect --output requirements.txt
+pywise_pkg dockerize --build --tag webapp:latest
+pywise_pkg multi-env
 ```
 
 Happy dependency managing! 🎉

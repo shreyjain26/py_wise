@@ -1,9 +1,9 @@
 """
-Tests for py_wise Advanced Features
+Tests for pywise_pkg Advanced Features
 """
 
 import pytest
-from py_wise import DependencyDetector, DependencyResolver, EnvironmentMigrator, DockerGenerator
+from pywise_pkg import DependencyDetector, DependencyResolver, EnvironmentMigrator, DockerGenerator
 
 def test_dependency_detector():
     """Test primary package detection."""

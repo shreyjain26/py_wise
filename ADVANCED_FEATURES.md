@@ -1,4 +1,4 @@
-# py_wise Advanced Features
+# pywise_pkg Advanced Features
 
 ## 🚀 Version 0.2.0 - Advanced Edition
 
@@ -17,7 +17,7 @@ This package includes all the advanced features you requested:
    - Intelligent package source analysis
 
 3. **Venv to Conda Conversion** (SINGLE COMMAND!)
-   - `py_wise venv-to-conda` converts instantly
+   - `pywise_pkg venv-to-conda` converts instantly
    - Analyzes packages for optimal sources
    - Creates environment.yml with hybrid approach
 
@@ -27,7 +27,7 @@ This package includes all the advanced features you requested:
    - Preserves package versions and metadata
 
 5. **Multi-Environment Configuration**
-   - `py_wise multi-env` creates dev/staging/prod setups
+   - `pywise_pkg multi-env` creates dev/staging/prod setups
    - Environment-specific dependencies
    - Configuration management
 
@@ -40,12 +40,12 @@ This package includes all the advanced features you requested:
 ### 🎯 Single Commands for Everything:
 
 ```bash
-py_wise detect                    # Smart primary detection
-py_wise venv-to-conda            # Convert venv → conda  
-py_wise resolve numpy pandas     # Hybrid resolution
-py_wise migrate file.txt --to conda  # Format conversion
-py_wise dockerize --build       # Docker optimization
-py_wise multi-env               # Multi-environment setup
+pywise_pkg detect                    # Smart primary detection
+pywise_pkg venv-to-conda            # Convert venv → conda  
+pywise_pkg resolve numpy pandas     # Hybrid resolution
+pywise_pkg migrate file.txt --to conda  # Format conversion
+pywise_pkg dockerize --build       # Docker optimization
+pywise_pkg multi-env               # Multi-environment setup
 ```
 
 ### 📦 Files Included (18 total):
@@ -56,17 +56,17 @@ Core Package:
 - README.md (comprehensive docs)
 - LICENSE (MIT)
 
-Main Package (py_wise/):
+Main Package (pywise_pkg/):
 - __init__.py (package entry point)
 - cli.py (rich CLI with all commands)
 
-Core Modules (py_wise/core/):
+Core Modules (pywise_pkg/core/):
 - detector.py (smart dependency detection)
 - resolver.py (conda-pip hybrid resolver)  
 - migrator.py (environment migration & conversion)
 - docker_gen.py (Docker optimization)
 
-Utilities (py_wise/utils/):
+Utilities (pywise_pkg/utils/):
 - helpers.py (utility functions)
 - formats.py (format handlers)
 
@@ -81,10 +81,10 @@ Documentation:
 ## 🚀 Installation:
 
 1. Extract this zip file
-2. `cd py_wise-advanced/`
+2. `cd pywise_pkg-advanced/`
 3. `pip install -r requirements.txt`
 4. `pip install -e .`
-5. `py_wise --help`
+5. `pywise_pkg --help`
 
 ## 🎯 Key Differentiators:
 

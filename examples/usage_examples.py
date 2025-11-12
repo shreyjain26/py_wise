@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-py_wise Advanced Usage Examples
-Demonstrates all the powerful features of py_wise
+pywise_pkg Advanced Usage Examples
+Demonstrates all the powerful features of pywise_pkg
 """
 
 def example_primary_detection():
     """Example: Smart primary package detection."""
     print("=== 🔍 Smart Primary Package Detection ===")
 
-    from py_wise import DependencyDetector
+    from pywise_pkg import DependencyDetector
 
     detector = DependencyDetector()
 
@@ -32,7 +32,7 @@ def example_hybrid_resolution():
     """Example: Conda-pip hybrid resolution."""
     print("\n=== 🧠 Conda-Pip Hybrid Resolution ===")
 
-    from py_wise import DependencyResolver
+    from pywise_pkg import DependencyResolver
 
     resolver = DependencyResolver()
 
@@ -65,7 +65,7 @@ def example_environment_migration():
     """Example: Environment migration and conversion."""
     print("\n=== 🔄 Environment Migration ===")
 
-    from py_wise import EnvironmentMigrator
+    from pywise_pkg import EnvironmentMigrator
 
     migrator = EnvironmentMigrator()
 
@@ -74,7 +74,7 @@ def example_environment_migration():
     print(f"Current environment: {current_env['type']}")
 
     print("\n🚀 Available conversions:")
-    print("  • venv → conda (py_wise venv-to-conda)")
+    print("  • venv → conda (pywise_pkg venv-to-conda)")
     print("  • requirements.txt → environment.yml")
     print("  • environment.yml → pyproject.toml")
     print("  • Any format → Any format")
@@ -88,7 +88,7 @@ def example_docker_integration():
     """Example: Docker optimization."""
     print("\n=== 🐳 Docker Integration ===")
 
-    from py_wise import DockerGenerator
+    from pywise_pkg import DockerGenerator
 
     docker_gen = DockerGenerator()
 
@@ -113,7 +113,7 @@ def example_docker_integration():
 
 def main():
     """Run all examples."""
-    print("🚀 py_wise Advanced Examples")
+    print("🚀 pywise_pkg Advanced Examples")
     print("=" * 50)
 
     try:
@@ -125,12 +125,12 @@ def main():
         print("\n" + "=" * 50)
         print("✅ Examples completed successfully!")
         print("\n🎯 Try these powerful commands:")
-        print("  py_wise detect                    # Show only YOUR packages")
-        print("  py_wise venv-to-conda            # Convert to conda instantly")
-        print("  py_wise resolve numpy pandas     # Hybrid resolution")
-        print("  py_wise dockerize --build        # Generate & build Docker")
-        print("  py_wise multi-env                # Setup dev/staging/prod")
-        print("  py_wise migrate file.txt --to conda  # Convert formats")
+        print("  pywise_pkg detect                    # Show only YOUR packages")
+        print("  pywise_pkg venv-to-conda            # Convert to conda instantly")
+        print("  pywise_pkg resolve numpy pandas     # Hybrid resolution")
+        print("  pywise_pkg dockerize --build        # Generate & build Docker")
+        print("  pywise_pkg multi-env                # Setup dev/staging/prod")
+        print("  pywise_pkg migrate file.txt --to conda  # Convert formats")
 
     except Exception as e:
         print(f"\n❌ Example failed: {e}")

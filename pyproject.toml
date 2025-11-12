@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py_wise"
+name = "pywise_pkg"
 version = "0.2.0"
 description = "Intelligent Python dependency management with conda-pip hybrid support"
 readme = "README.md"
 authors = [
-    {name = "py_wise Contributors", email = "contributors@py_wise.io"}
+    {name = "pywise_pkg Contributors", email = "contributors@pywise_pkg.io"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -49,16 +49,16 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/py_wise/py_wise"
-Documentation = "https://py_wise.readthedocs.io/"
-Repository = "https://github.com/py_wise/py_wise.git"
-"Bug Tracker" = "https://github.com/py_wise/py_wise/issues"
+Homepage = "https://github.com/pywise_pkg/pywise_pkg"
+Documentation = "https://pywise_pkg.readthedocs.io/"
+Repository = "https://github.com/pywise_pkg/pywise_pkg.git"
+"Bug Tracker" = "https://github.com/pywise_pkg/pywise_pkg/issues"
 
 [project.scripts]
-py_wise = "py_wise.cli:main"
+pywise_pkg = "pywise_pkg.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}
 
 [tool.setuptools.packages.find]
-include = ["py_wise*"]
+include = ["pywise_pkg*"]

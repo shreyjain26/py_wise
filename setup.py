@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-py_wise - Intelligent Python Dependency Management
+pywise_pkg - Intelligent Python Dependency Management
 Advanced package with conda-pip hybrid support
 """
 
@@ -13,14 +13,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="py_wise",
+    name="pywise_pkg",
     version="0.2.0",  # Advanced version
-    author="py_wise Contributors",
+    author="pywise_pkg Contributors",
     author_email="shreyjain026@gmail.com",
     description="Intelligent Python dependency management with conda-pip hybrid support",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/shreyjain26/py_wise",
+    url="https://github.com/shreyjain26/pywise_pkg",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -40,7 +40,7 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "py_wise=py_wise.cli:main",
+            "pywise_pkg=pywise_pkg.cli:main",
         ],
     },
     include_package_data=True,

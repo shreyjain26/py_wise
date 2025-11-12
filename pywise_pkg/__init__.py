@@ -1,13 +1,13 @@
 """
-py_wise - Intelligent Python Dependency Management
+pywise_pkg - Intelligent Python Dependency Management
 
 A powerful tool for managing Python dependencies intelligently with 
 conda-pip hybrid support, environment migration, and Docker optimization.
 """
 
 __version__ = "0.1.0"
-__author__ = "py_wise Contributors"
-__email__ = "contributors@py_wise.io"
+__author__ = "pywise_pkg Contributors"
+__email__ = "contributors@pywise_pkg.io"
 
 from .core.detector import DependencyDetector
 from .core.resolver import HybridDependencyResolver as DependencyResolver

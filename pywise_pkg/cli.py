@@ -1,5 +1,5 @@
 """
-Enhanced command-line interface for py_wise with advanced features
+Enhanced command-line interface for pywise_pkg with advanced features
 """
 
 import sys
@@ -16,10 +16,10 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 console = Console()
 
 @click.group()
-@click.version_option(version="0.1.0", prog_name="py_wise")
+@click.version_option(version="0.1.0", prog_name="pywise_pkg")
 def cli():
     """
-    py_wise - Intelligent Python Dependency Management
+    pywise_pkg - Intelligent Python Dependency Management
 
     Advanced dependency management with conda-pip hybrid support,
     environment migration, and Docker optimization.
@@ -71,7 +71,7 @@ def detect(output_format: str,
             if output:
                 # Generate requirements file
                 with open(output, 'w') as f:
-                    f.write("# Primary dependencies detected by py_wise\n\n")
+                    f.write("# Primary dependencies detected by pywise_pkg\n\n")
                     for pkg in primary_packages:
                         version = f"=={pkg['version']}" if pkg.get('version') else ''
                         f.write(f"{pkg['name']}{version}\n")
@@ -126,7 +126,7 @@ def resolve(packages: List[str], strategy: str, output: Optional[str]):
 
     if not packages:
         console.print("[red]Please specify packages to resolve[/red]")
-        console.print("Example: py_wise resolve numpy pandas tensorflow")
+        console.print("Example: pywise_pkg resolve numpy pandas tensorflow")
         return
 
     with Progress(
